@@ -1,0 +1,35 @@
+==355177== Memcheck, a memory error detector
+==355177== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==355177== Using Valgrind-3.18.1-42b08ed5bd-20211015 and LibVEX; rerun with -h for copyright info
+==355177== Command: ./demo
+==355177== 
+--355177-- Valgrind options:
+--355177--    --tool=memcheck
+--355177--    -v
+--355177--    --leak-check=full
+--355177--    --show-leak-kinds=all
+--355177--    --error-exitcode=99
+--355177-- Contents of /proc/version:
+--355177--   Linux version 5.15.146.1-microsoft-standard-WSL2 (root@65c757a075e2) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Thu Jan 11 04:09:03 UTC 2024
+--355177-- 
+--355177-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand-rdseed
+--355177-- Page sizes: currently 4096, max supported 4096
+--355177-- Valgrind library directory: /usr/libexec/valgrind
+--355177-- Reading syms from /root/my_folder/CPP_Ex2/demo
+### unhandled dwarf2 abbrev form code 0x25
+### unhandled dwarf2 abbrev form code 0x25
+### unhandled dwarf2 abbrev form code 0x25
+### unhandled dwarf2 abbrev form code 0x23
+### unhandled dwarf2 abbrev form code 0x25
+### unhandled dwarf2 abbrev form code 0x25
+### unhandled dwarf2 abbrev form code 0x25
+### unhandled dwarf2 abbrev form code 0x23
+==355177== Valgrind: debuginfo reader: ensure_valid failed:
+==355177== Valgrind:   during call to ML_(img_get)
+==355177== Valgrind:   request for range [410649664, +4) exceeds
+==355177== Valgrind:   valid image size of 389104 for image:
+==355177== Valgrind:   "/root/my_folder/CPP_Ex2/demo"
+==355177== 
+==355177== Valgrind: debuginfo reader: Possibly corrupted debuginfo file.
+==355177== Valgrind: I can't recover.  Giving up.  Sorry.
+==355177== 
