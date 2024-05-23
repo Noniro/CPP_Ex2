@@ -12,26 +12,26 @@ This repository is the continues implementations of the Graph from Exercise 1, w
 
 ### Overloaded Operators
 
- - **Addition (+):** Adds two graphs by adding the 
+ *Addition (+): Adds two graphs by adding the 
  corresponding entries in their adjacency matrices.
 
-- **Subtraction (-):** Subtracts two graphs by subtracting the corresponding entries in their adjacency matrices.
+*Subtraction (-): Subtracts two graphs by subtracting the corresponding entries in their adjacency matrices.
 
-- **Addition and Assignment (+=):** Adds a graph to the current graph and updates the current graph in-place.
+*Addition and Assignment (+=): Adds a graph to the current graph and updates the current graph in-place.
 
-- **Subtraction and Assignment (-=):** Subtracts a graph from the current graph and updates the current graph in-place.
+*Subtraction and Assignment (-=): Subtracts a graph from the current graph and updates the current graph in-place.
 
-- **Comparison Operators (==, !=, <, <=, >, >=):** Compares two graphs based on their adjacency matrices.
+*Comparison Operators (==, !=, <, <=, >, >=): Compares two graphs based on their adjacency matrices.
 
-- **Increment (++, ++(int)):** Increments the graph by adding 1 to each edge weight.
+*Increment (++, ++(int)): Increments the graph by adding 1 to each edge weight.
 
-- **Decrement (--, --(int)):** Decrements the graph by subtracting 1 from each edge weight.
+*Decrement (--, --(int)): Decrements the graph by subtracting 1 from each edge weight.
 
-- **Multiplication (*):** Multiplies two graphs using matrix multiplication. Note that multiplication is only defined for compatible graphs (where both are valid graph represented by an nXn matrix and the graphs diagnol is skipped in the prosses to keep the result valid).
+*Multiplication (*): Multiplies two graphs using matrix multiplication. Note that multiplication is only defined for compatible graphs (where both are valid graph represented by an nXn matrix and the graphs diagnol is skipped in the prosses to keep the result valid).
 
-- **Multiplication by Scalar (*):** Multiplies each edge weight in the graph by a scalar value.
+*Multiplication by Scalar (*): Multiplies each edge weight in the graph by a scalar value.
 
-- **Output Stream Insertion (<<):** Inserts the graph representation (adjacency matrix) into an output stream.
+*Output Stream Insertion (<<): Inserts the graph representation (adjacency matrix) into an output stream.
 
 ### Usage Examples:
 some examples demonstrating the usage of the overloaded operators for the Graph class:

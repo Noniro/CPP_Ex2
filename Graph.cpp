@@ -177,6 +177,16 @@ Graph Graph::operator-(int n) const {
     return result;
 }
 
+
+Graph Graph::operator-()const {
+    return *this * -1;
+}
+
+Graph Graph::operator+() const{
+    return *this;
+
+}
+
 Graph Graph::operator+=(const Graph& G) {
     *this = *this + G;
     return *this;

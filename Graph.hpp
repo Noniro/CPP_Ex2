@@ -31,6 +31,8 @@ namespace VOGDAN{
         Graph operator-=(const Graph& G);
         Graph operator+(int n)const;
         Graph operator-(int n)const;
+        Graph operator-()const;
+        Graph operator+()const;
         
         bool operator<(const Graph& G)const;
         bool operator>(const Graph& G)const;
@@ -46,8 +48,8 @@ namespace VOGDAN{
         Graph operator++(int);//post-increment
         Graph operator--(int);
         Graph operator*(const Graph& G)const;
-        Graph operator*(int n)const;
-        friend Graph operator*(int n, const Graph& G);
+        Graph operator*(int n)const; // graph * int
+        friend Graph operator*(int n, const Graph& G); // int * graph
         //cout overloading
         friend std::ostream& operator<<(std::ostream& os, const Graph& G);
 

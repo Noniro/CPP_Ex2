@@ -34,12 +34,19 @@ TEST_CASE("Test graph addition"){ // Credit to chanan helman for some of the tes
         CHECK((g1 != g3) == false);
     }
 
-    SUBCASE("Test unary +")
+    SUBCASE("Test unary +/- and binary += / -=")
     {   
         Graph g5 = g1;
         g5 += g2;
-
+        Graph g6 = g1;
+        g6 = -g6;
+        Graph g7 = +g6;
+        Graph g8 = g1;
+        g8 = g1+g1;
+        g8 -= g1;
         CHECK((g5 == g4) == true);
+        CHECK((g6 == g7) == true);
+        CHECK((g8 == g1) == true);
     }
 
     SUBCASE("Addition of two graphs with different dimensions")
